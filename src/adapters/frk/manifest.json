@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0-s5a",
+  "coreVersion": "0.1.0-s5a",
+  "profileId": "blitzcache-8.34-cpu50-v1",
+  "objects": [
+    {
+      "name": "CaptureManifest",
+      "kind": "TABLE"
+    },
+    {
+      "name": "CaptureSource",
+      "kind": "TABLE"
+    },
+    {
+      "name": "ReadSource",
+      "kind": "PROCEDURE"
+    },
+    {
+      "name": "RegisterCapture",
+      "kind": "PROCEDURE",
+      "role": "viz_frk_capture"
+    },
+    {
+      "name": "LoadBlitzCache",
+      "kind": "PROCEDURE"
+    },
+    {
+      "name": "ReadBlitzCacheDataset",
+      "kind": "PROCEDURE",
+      "role": "viz_user"
+    },
+    {
+      "name": "InspectCapture",
+      "kind": "PROCEDURE",
+      "role": "viz_user"
+    },
+    {
+      "name": "BlitzCacheWorkloadMap",
+      "kind": "PROCEDURE",
+      "role": "viz_user"
+    }
+  ]
+}

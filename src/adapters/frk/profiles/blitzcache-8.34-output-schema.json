@@ -1,0 +1,692 @@
+[
+  {
+    "column_id": 1,
+    "name": "ID",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": false,
+    "is_computed": false
+  },
+  {
+    "column_id": 2,
+    "name": "ServerName",
+    "SqlType": "nvarchar",
+    "max_length": 516,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 3,
+    "name": "CheckDate",
+    "SqlType": "datetimeoffset",
+    "max_length": 10,
+    "precision": 34,
+    "scale": 7,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 4,
+    "name": "Version",
+    "SqlType": "nvarchar",
+    "max_length": 516,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 5,
+    "name": "QueryType",
+    "SqlType": "nvarchar",
+    "max_length": 516,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 6,
+    "name": "Warnings",
+    "SqlType": "varchar",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 7,
+    "name": "DatabaseName",
+    "SqlType": "nvarchar",
+    "max_length": 256,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": false,
+    "is_computed": false
+  },
+  {
+    "column_id": 8,
+    "name": "SerialDesiredMemory",
+    "SqlType": "float",
+    "max_length": 8,
+    "precision": 53,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 9,
+    "name": "SerialRequiredMemory",
+    "SqlType": "float",
+    "max_length": 8,
+    "precision": 53,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 10,
+    "name": "AverageCPU",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 11,
+    "name": "TotalCPU",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 12,
+    "name": "PercentCPUByType",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 13,
+    "name": "CPUWeight",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 14,
+    "name": "AverageDuration",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 15,
+    "name": "TotalDuration",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 16,
+    "name": "DurationWeight",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 17,
+    "name": "PercentDurationByType",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 18,
+    "name": "AverageReads",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 19,
+    "name": "TotalReads",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 20,
+    "name": "ReadWeight",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 21,
+    "name": "PercentReadsByType",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 22,
+    "name": "AverageWrites",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 23,
+    "name": "TotalWrites",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 24,
+    "name": "WriteWeight",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 25,
+    "name": "PercentWritesByType",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 26,
+    "name": "ExecutionCount",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 27,
+    "name": "ExecutionWeight",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 28,
+    "name": "PercentExecutionsByType",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 29,
+    "name": "ExecutionsPerMinute",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 30,
+    "name": "PlanCreationTime",
+    "SqlType": "datetime",
+    "max_length": 8,
+    "precision": 23,
+    "scale": 3,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 31,
+    "name": "PlanCreationTimeHours",
+    "SqlType": "int",
+    "max_length": 4,
+    "precision": 10,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": true
+  },
+  {
+    "column_id": 32,
+    "name": "LastExecutionTime",
+    "SqlType": "datetime",
+    "max_length": 8,
+    "precision": 23,
+    "scale": 3,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 33,
+    "name": "LastCompletionTime",
+    "SqlType": "datetime",
+    "max_length": 8,
+    "precision": 23,
+    "scale": 3,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 34,
+    "name": "PlanHandle",
+    "SqlType": "varbinary",
+    "max_length": 64,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 35,
+    "name": "Remove Plan Handle From Cache",
+    "SqlType": "varchar",
+    "max_length": 150,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": true
+  },
+  {
+    "column_id": 36,
+    "name": "SqlHandle",
+    "SqlType": "varbinary",
+    "max_length": 64,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 37,
+    "name": "Remove SQL Handle From Cache",
+    "SqlType": "varchar",
+    "max_length": 150,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": true
+  },
+  {
+    "column_id": 38,
+    "name": "SQL Handle More Info",
+    "SqlType": "varchar",
+    "max_length": 169,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": true
+  },
+  {
+    "column_id": 39,
+    "name": "QueryHash",
+    "SqlType": "binary",
+    "max_length": 8,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 40,
+    "name": "Query Hash More Info",
+    "SqlType": "varchar",
+    "max_length": 74,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": true
+  },
+  {
+    "column_id": 41,
+    "name": "QueryPlanHash",
+    "SqlType": "binary",
+    "max_length": 8,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 42,
+    "name": "StatementStartOffset",
+    "SqlType": "int",
+    "max_length": 4,
+    "precision": 10,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 43,
+    "name": "StatementEndOffset",
+    "SqlType": "int",
+    "max_length": 4,
+    "precision": 10,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 44,
+    "name": "PlanGenerationNum",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 45,
+    "name": "MinReturnedRows",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 46,
+    "name": "MaxReturnedRows",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 47,
+    "name": "AverageReturnedRows",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 48,
+    "name": "TotalReturnedRows",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 49,
+    "name": "QueryText",
+    "SqlType": "nvarchar",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 50,
+    "name": "QueryPlan",
+    "SqlType": "xml",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 51,
+    "name": "NumberOfPlans",
+    "SqlType": "int",
+    "max_length": 4,
+    "precision": 10,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 52,
+    "name": "NumberOfDistinctPlans",
+    "SqlType": "int",
+    "max_length": 4,
+    "precision": 10,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 53,
+    "name": "MinGrantKB",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 54,
+    "name": "MaxGrantKB",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 55,
+    "name": "MinUsedGrantKB",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 56,
+    "name": "MaxUsedGrantKB",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 57,
+    "name": "PercentMemoryGrantUsed",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 58,
+    "name": "AvgMaxMemoryGrant",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 59,
+    "name": "MinSpills",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 60,
+    "name": "MaxSpills",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 61,
+    "name": "TotalSpills",
+    "SqlType": "bigint",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 62,
+    "name": "AvgSpills",
+    "SqlType": "money",
+    "max_length": 8,
+    "precision": 19,
+    "scale": 4,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 63,
+    "name": "QueryPlanCost",
+    "SqlType": "float",
+    "max_length": 8,
+    "precision": 53,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 64,
+    "name": "Pattern",
+    "SqlType": "nvarchar",
+    "max_length": 40,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 65,
+    "name": "ai_prompt",
+    "SqlType": "nvarchar",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 66,
+    "name": "ai_advice",
+    "SqlType": "nvarchar",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 67,
+    "name": "ai_payload",
+    "SqlType": "nvarchar",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 68,
+    "name": "ai_raw_response",
+    "SqlType": "nvarchar",
+    "max_length": -1,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": false
+  },
+  {
+    "column_id": 69,
+    "name": "JoinKey",
+    "SqlType": "nvarchar",
+    "max_length": 616,
+    "precision": 0,
+    "scale": 0,
+    "is_nullable": true,
+    "is_computed": true
+  }
+]

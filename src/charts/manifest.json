@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0-s5a",
+  "objects": [
+    {
+      "name": "BarChart",
+      "kind": "PROCEDURE",
+      "path": "src/charts/BarChart.sql",
+      "public": true
+    },
+    {
+      "name": "LineChart",
+      "kind": "PROCEDURE",
+      "path": "src/charts/LineChart.sql",
+      "public": true
+    },
+    {
+      "name": "BubbleChart",
+      "kind": "PROCEDURE",
+      "path": "src/charts/BubbleChart.sql",
+      "public": true
+    }
+  ]
+}

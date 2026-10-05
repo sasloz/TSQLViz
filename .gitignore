@@ -1,0 +1,12 @@
+# Local test runs
+/tests/results/*
+!/tests/results/README.md
+
+# Archived validation artifacts and historical reports
+/tests/evidence/
+/tests/visual/evidence/
+/tests/*-findings.md
+/tests/visual/*-findings.md
+
+# Internal project specifications
+/specs/

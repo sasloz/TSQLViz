@@ -1,0 +1,344 @@
+{
+  "version": "0.1.0-s5a",
+  "objects": [
+    {
+      "name": "Context_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/Context_v1.sql",
+      "public": true
+    },
+    {
+      "name": "ItemLabel_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/ItemLabel_v1.sql",
+      "public": true
+    },
+    {
+      "name": "CategoryValue_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/CategoryValue_v1.sql",
+      "public": true
+    },
+    {
+      "name": "XY_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/XY_v1.sql",
+      "public": true
+    },
+    {
+      "name": "Vertex_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/Vertex_v1.sql",
+      "public": true
+    },
+    {
+      "name": "Scene_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/Scene_v1.sql",
+      "public": true
+    },
+    {
+      "name": "LibraryVersion",
+      "kind": "TABLE",
+      "path": "src/core/metadata/LibraryVersion.sql",
+      "public": false
+    },
+    {
+      "name": "ObjectManifest",
+      "kind": "TABLE",
+      "path": "src/core/metadata/ObjectManifest.sql",
+      "public": false
+    },
+    {
+      "name": "GlyphStroke",
+      "kind": "TABLE",
+      "path": "src/core/text/GlyphStroke.sql",
+      "public": false
+    },
+    {
+      "name": "Numbers",
+      "kind": "TVF",
+      "path": "src/core/scales/Numbers.sql",
+      "public": false
+    },
+    {
+      "name": "Point",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/Point.sql",
+      "public": true
+    },
+    {
+      "name": "CoordinateText",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/CoordinateText.sql",
+      "public": false
+    },
+    {
+      "name": "Segment",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/Segment.sql",
+      "public": true
+    },
+    {
+      "name": "Rect",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/Rect.sql",
+      "public": true
+    },
+    {
+      "name": "Circle",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/Circle.sql",
+      "public": true
+    },
+    {
+      "name": "Polyline",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/Polyline.sql",
+      "public": true
+    },
+    {
+      "name": "Polygon",
+      "kind": "FUNCTION",
+      "path": "src/core/geometry/Polygon.sql",
+      "public": true
+    },
+    {
+      "name": "ScaleLinear",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/ScaleLinear.sql",
+      "public": true
+    },
+    {
+      "name": "ScaleLog",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/ScaleLog.sql",
+      "public": true
+    },
+    {
+      "name": "ScaleBand",
+      "kind": "TVF",
+      "path": "src/core/scales/ScaleBand.sql",
+      "public": true
+    },
+    {
+      "name": "BandCenter",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/BandCenter.sql",
+      "public": true
+    },
+    {
+      "name": "BandWidth",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/BandWidth.sql",
+      "public": true
+    },
+    {
+      "name": "BubbleRadius",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/BubbleRadius.sql",
+      "public": true
+    },
+    {
+      "name": "TimeToEpoch",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/TimeToEpoch.sql",
+      "public": true
+    },
+    {
+      "name": "EpochToTime",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/EpochToTime.sql",
+      "public": true
+    },
+    {
+      "name": "TickStep",
+      "kind": "FUNCTION",
+      "path": "src/core/scales/TickStep.sql",
+      "public": false
+    },
+    {
+      "name": "TicksLinear",
+      "kind": "TVF",
+      "path": "src/core/scales/TicksLinear.sql",
+      "public": true
+    },
+    {
+      "name": "NiceDomain",
+      "kind": "TVF",
+      "path": "src/core/scales/NiceDomain.sql",
+      "public": true
+    },
+    {
+      "name": "TicksLog",
+      "kind": "TVF",
+      "path": "src/core/scales/TicksLog.sql",
+      "public": true
+    },
+    {
+      "name": "TicksTime",
+      "kind": "TVF",
+      "path": "src/core/scales/TicksTime.sql",
+      "public": true
+    },
+    {
+      "name": "TicksDuration",
+      "kind": "TVF",
+      "path": "src/core/scales/TicksDuration.sql",
+      "public": true
+    },
+    {
+      "name": "TicksBytes",
+      "kind": "TVF",
+      "path": "src/core/scales/TicksBytes.sql",
+      "public": true
+    },
+    {
+      "name": "Tick_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/Tick_v1.sql",
+      "public": true
+    },
+    {
+      "name": "TextLabel_v1",
+      "kind": "TYPE",
+      "path": "src/core/types/TextLabel_v1.sql",
+      "public": false
+    },
+    {
+      "name": "DisplayText",
+      "kind": "FUNCTION",
+      "path": "src/core/text/DisplayText.sql",
+      "public": false
+    },
+    {
+      "name": "TextAdvance",
+      "kind": "FUNCTION",
+      "path": "src/core/text/TextAdvance.sql",
+      "public": false
+    },
+    {
+      "name": "MeasureText",
+      "kind": "TVF",
+      "path": "src/core/text/MeasureText.sql",
+      "public": true
+    },
+    {
+      "name": "Text",
+      "kind": "FUNCTION",
+      "path": "src/core/text/Text.sql",
+      "public": true
+    },
+    {
+      "name": "TextRows",
+      "kind": "TVF",
+      "path": "src/core/text/TextRows.sql",
+      "public": true
+    },
+    {
+      "name": "FitText",
+      "kind": "FUNCTION",
+      "path": "src/core/text/FitText.sql",
+      "public": true
+    },
+    {
+      "name": "FormatNumber",
+      "kind": "FUNCTION",
+      "path": "src/core/text/FormatNumber.sql",
+      "public": true
+    },
+    {
+      "name": "FormatTime",
+      "kind": "FUNCTION",
+      "path": "src/core/text/FormatTime.sql",
+      "public": true
+    },
+    {
+      "name": "Canvas",
+      "kind": "TVF",
+      "path": "src/core/layout/Canvas.sql",
+      "public": true
+    },
+    {
+      "name": "AxisTicks",
+      "kind": "TVF",
+      "path": "src/core/layout/AxisTicks.sql",
+      "public": true
+    },
+    {
+      "name": "AxisBottom",
+      "kind": "TVF",
+      "path": "src/core/layout/AxisBottom.sql",
+      "public": true
+    },
+    {
+      "name": "AxisLeft",
+      "kind": "TVF",
+      "path": "src/core/layout/AxisLeft.sql",
+      "public": true
+    },
+    {
+      "name": "LineParts",
+      "kind": "TVF",
+      "path": "src/core/geometry/LineParts.sql",
+      "public": false
+    },
+    {
+      "name": "ChartOptions",
+      "kind": "PROCEDURE",
+      "path": "src/core/layout/ChartOptions.sql",
+      "public": false
+    },
+    {
+      "name": "ResolveDomain",
+      "kind": "PROCEDURE",
+      "path": "src/core/layout/ResolveDomain.sql",
+      "public": false
+    },
+    {
+      "name": "ValidateXY",
+      "kind": "PROCEDURE",
+      "path": "src/core/layout/ValidateXY.sql",
+      "public": false
+    },
+    {
+      "name": "RenderScene",
+      "kind": "PROCEDURE",
+      "path": "src/core/render/RenderScene.sql",
+      "public": true
+    },
+    {
+      "name": "WrapText",
+      "kind": "TVF",
+      "path": "src/core/text/WrapText.sql",
+      "public": false
+    },
+    {
+      "name": "ValidateContext",
+      "kind": "PROCEDURE",
+      "path": "src/core/layout/ValidateContext.sql",
+      "public": false
+    },
+    {
+      "name": "WorkloadInsight",
+      "kind": "FUNCTION",
+      "path": "src/core/layout/WorkloadInsight.sql",
+      "public": true
+    },
+    {
+      "name": "FinishChart",
+      "kind": "PROCEDURE",
+      "path": "src/core/layout/FinishChart.sql",
+      "public": false
+    },
+    {
+      "name": "AnnotateScene",
+      "kind": "PROCEDURE",
+      "path": "src/core/render/AnnotateScene.sql",
+      "public": true
+    }
+  ],
+  "data": [
+    "src/core/text/font-data.sql"
+  ]
+}
