@@ -1,0 +1,34 @@
+# TSQLViz
+
+> Experimental T-SQL visualization toolkit. Caller-supplied data becomes geometry
+> displayed in SQL Server Management Studio's Spatial Results tab.
+
+An AI agent can prepare reviewable SQL outside a restricted production environment.
+A human reviews and transfers the artifact. Runtime requires preinstalled TSQLViz
+Core + Charts, SQL Server 2017+ with compatibility level 140+, and SSMS (22 is the
+primary tested viewer). Runtime has no AI/network integration. This is not a
+zero-install mode. API/package currently 0.1.0-s5a; pin a revision and verify the
+installed contracts. Main-branch links below can change.
+
+## Agent workflow
+
+- [Agent instructions](https://github.com/sasloz/TSQLViz/blob/main/AGENTS.md): repository and artifact workflow.
+- [Agent guide](https://github.com/sasloz/TSQLViz/blob/main/docs/agent-guide.md): API selection, units, context, limits, reviewable output.
+- [Agent safety](https://github.com/sasloz/TSQLViz/blob/main/docs/agent-safety.md): restricted environment boundary and acquisition review.
+- [Runnable agent examples](https://github.com/sasloz/TSQLViz/tree/main/examples/agents): synthetic charts and opt-in interval DMV acquisition.
+
+## Authoritative contracts
+
+- [Data contracts](https://github.com/sasloz/TSQLViz/blob/main/docs/data-contracts.md): identities, NULL, UTC, scene and context.
+- [Type definitions](https://github.com/sasloz/TSQLViz/tree/main/src/core/types): exact columns, order, lengths and constraints.
+- [Chart source](https://github.com/sasloz/TSQLViz/tree/main/src/charts): exact procedure signatures and validation.
+- [Core reference](https://github.com/sasloz/TSQLViz/blob/main/src/core/README.md): geometry and scales.
+- [Charts reference](https://github.com/sasloz/TSQLViz/blob/main/src/charts/README.md): layout and chart behavior.
+- [Rendering](https://github.com/sasloz/TSQLViz/blob/main/docs/rendering.md): scene budgets and SSMS settings.
+
+## Installation and validation
+
+- [README](https://github.com/sasloz/TSQLViz/blob/main/README.md): installation, access and project status.
+- [Development](https://github.com/sasloz/TSQLViz/blob/main/docs/development.md): builds and isolated tests.
+- [Validation](https://github.com/sasloz/TSQLViz/blob/main/docs/validation.md): engine evidence and known visual limitations.
+- [Query Store recipes](https://github.com/sasloz/TSQLViz/blob/main/examples/query-store/README.md): reviewed cross-database patterns and permissions.

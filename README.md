@@ -6,6 +6,8 @@ TSQLViz is an experiment in building a reusable visualization toolkit in T-SQL. 
 
 The output is a regular `geometry` column, which SSMS displays in its **Spatial Results** tab. You can draw directly with a `SELECT`, combine helpers into your own visualization, or use one of the built-in charts.
 
+An AI agent can also prepare a **reviewable T-SQL artifact outside a restricted production environment**, where a consultant can use only approved SQL scripts. The human reviews and transfers the SQL, and it runs against local data with preinstalled TSQLViz and SSMS Spatial Results. No AI service or additional network connection is needed at runtime. Start with the [agent guide](docs/agent-guide.md), [safety boundary](docs/agent-safety.md) and [runnable agent examples](examples/agents/README.md). Agent discovery starts at [llms.txt](llms.txt) and [AGENTS.md](AGENTS.md).
+
 **Very early, experimental version. The API is not stable.** Function and procedure signatures, data types, defaults and rendering behavior may change between versions, including breaking changes. Expect to adapt your scripts when upgrading. The examples are starting points for experimentation and feedback.
 
 ## A toolkit you can build on
@@ -74,6 +76,7 @@ The [native vector example](examples/synthetic/07-vectors.sql) reads a `dbo.Vect
 | Frequency, cost per execution and total cost | [Bubble chart](examples/synthetic/03-workload.sql) |
 | Your own combination of charts, shapes and text | [Composition](examples/synthetic/04-composition.sql) |
 | A custom chart, built step by step | [Dot plot tutorial](docs/tutorial.md) |
+| SQL prepared by an AI agent for a restricted environment | [Agent artifact examples](examples/agents/README.md) |
 
 The [workbook](docs/stack-training.md) contains 24 runnable SQL examples, exercises and a public API reference. The [Core reference](src/core/README.md) describes geometry and scales; the [Charts reference](src/charts/README.md) covers chart procedures, text and layout.
 
@@ -92,6 +95,8 @@ An optional [BlitzCache adapter](src/adapters/frk/README.md) adds a workload map
 ## Installation and access
 
 The combined installer includes Core and Charts. For separate installation, run [install-core.sql](dist/install-core.sql) followed by [install-charts.sql](dist/install-charts.sql).
+
+For restricted environments, installation and access assignment are separate, reviewed DBA steps. Agent-generated consumer scripts assume the library is already installed; this workflow does **not** offer a zero-install mode. Data acquisition permissions and cost review remain separate from visualization. The agent does not need customer credentials or a connection to PROD.
 
 After installation, grant an existing database user access to the library:
 

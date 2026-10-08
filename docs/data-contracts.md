@@ -2,6 +2,11 @@
 
 These interfaces describe the current experimental implementation. The API is not stable; the linked SQL definitions give the exact column types, nullability, constraints and order for the version in this repository.
 
+For generating reviewable SQL outside a restricted environment, follow the
+[agent guide](agent-guide.md) and [acquisition safety boundary](agent-safety.md).
+The [agent examples](../examples/agents/README.md) apply these contracts with
+separate acquisition, normalization and rendering sections.
+
 ## Table-valued inputs
 
 | Type | Purpose | SQL definition |

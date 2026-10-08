@@ -33,6 +33,7 @@ Run the relevant suites from the project root:
 ./tools/test-training.ps1
 ./tools/test-query-store.ps1
 ./tools/test-query-store-bubbles.ps1
+./tools/test-agents.ps1
 ```
 
 Each independently started runner uses an isolated laboratory and removes only its own container and anonymous volumes. Results are written to `tests/results/`, which is ignored by version control. Archived evidence under `tests/evidence/` and `tests/visual/evidence/`, historical findings reports and internal specifications are also excluded. The executable tests and fixtures remain included.
@@ -40,6 +41,13 @@ Each independently started runner uses an isolated laboratory and removes only i
 The chart suite covers Core, installation and migration, case-sensitive databases, restricted users and concurrent calls. The adapter suite also checks capture separation, schema drift, normalization and live diagnostic recipes. `-RealCapture` downloads the fixed FRK commit into the test laboratory and verifies its hash; upstream code is not bundled in the adapter installer.
 
 The context suite checks the five context-enabled synthetic examples (`00` through `04`), DMV recipes and adapter views. It explicitly selects these examples; the separately installed prototypes and the native vector demo are outside this suite.
+
+The [agent suite](../tools/test-agents.ps1) checks the actual scripts in
+[examples/agents](../examples/agents/README.md) with library-only users, numeric
+oracles, scene budgets, an isolated live DMV read, and rejection cases. Use
+`-PrepareOnly` to export the same ordered SQL cases for an approved remote lab;
+this mode does not provision Docker or execute SQL. Its final cleanup case must
+also run after a failed case. All test tooling stays outside PROD.
 
 The [compact SQL client](../tools/lab-sql-client.ps1) uses the locally available `System.Data.SqlClient` provider. The chart runner accepts `-SqlClient dotnet`; the adapter runner also supports `-SqlClient sqlcmd`. Both paths verify the laboratory's identity before using its credentials. See the [laboratory guide](../tests/visual/README.md) for interactive runs and SSMS setup.
 
